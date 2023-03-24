@@ -1,38 +1,37 @@
+@font-face {
+  font-family: "Parabole";
+  src: url(assets/fonts/Parabole.ttf) format("truetype");
+}
+
+
 .App {
+  cursor: none !important;
+}
+
+
+.name{
+
+  /* background: url(assets/textures/blue-noise-texture.png) no-repeat center center;
+  background-size: cover;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip:text;
+  background-clip:text;  */
+
+  width: auto;
+  left: 5%;
+  top: 5%;
+  position: absolute;
+  border-radius: 5px;
+  font-size: 5.4vw;
   text-align: center;
+  color: #2A56FF;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

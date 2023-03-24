@@ -1,0 +1,153 @@
+
+  #buttons-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: lightyellow; */
+    z-index: 999999;
+    top: 10%;
+    right: 5%;
+    width: 52vh;
+    text-decoration: none;
+  }
+  
+  #buttons-container > a {
+    /* border: 2px dashed red; */
+    background-color: white;
+    white-space: nowrap;
+    color: #2a56ff;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: none !important;
+
+  
+    height: 25px;
+    width: auto;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    border-radius: 999px;
+    padding: 15px;
+
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+  
+  } 
+  #buttons-container > a:hover ,
+  #buttons-container > a:focus  {
+    box-shadow: 0 1.0em 1.0em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    font-weight: 1000;
+  }
+  
+  #buttons-container > a :hover:after {
+    font-weight: 100;
+    /* transform-origin: bottom left; */
+  }
+  
+  /* .nav {
+    position: absolute;
+    top: 8%;
+    left: 4%;
+  
+    height: 25px;
+    width: auto;
+  
+    background-color: #2a56ff;
+    white-space: nowrap;
+    color: #e4e4fa;
+    font-size: 25px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 999px;
+    padding: 15px;
+  
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+  }
+  
+  #work:hover,
+  #work:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    font-weight: 1000;
+  }
+  
+  #work:hover:after {
+    font-weight: 1000;
+    transform-origin: bottom left;
+  }
+  
+  #about {
+    position: fixed;
+    top: 8%;
+    left: 75%;
+  
+    white-space: nowrap;
+    color: #2a56ff;
+    font-size: 25px;
+  
+    height: 25px;
+    width: auto;
+    background-color: white;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 999px;
+    padding: 15px;
+  
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+  }
+  
+  #about:hover,
+  #about:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    font-weight: 900;
+  }
+  
+  #contact {
+    position: absolute;
+    top: 8%;
+    left: 85.5%;
+    white-space: nowrap;
+    color: #2a56ff;
+    font-size: 25px;
+    background-color: white;
+  
+    height: 25px;
+    width: auto;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 999px;
+    padding: 15px;
+  
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+  }
+  #contact:hover,
+  #contact:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    font-weight: 900;
+  }
+   */
