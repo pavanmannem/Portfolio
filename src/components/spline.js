@@ -4,7 +4,7 @@ import './spline.css'
  function SplineScene() {
   return (
     <div className='spline-scene'>
-        <Spline scene="https://prod.spline.design/qVjGFDXtR93A7RQY/scene.splinecode" /> 
+      <Spline scene="https://prod.spline.design/Fcyk9IOKgIg25mPK/scene.splinecode" />
     </div>
   );
 }

@@ -1,7 +1,18 @@
 @font-face {
   font-family: "Parabole";
-  src: url(assets/fonts/Parabole.ttf) format("truetype");
+  src: url(assets/fonts/Parabole/Parabole.ttf) format("truetype");
 }
+@font-face {
+  font-family: "NM Light";
+  src: url(assets/fonts/NueueMachina/PPNeueMachina-Light.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Right Grotesk";
+  src: url(assets/fonts/RightGrotesk/Display/PPRightGrotesk-BoldItalic.otf) format("OpenType");
+}
+
+
 
 
 .App {
@@ -10,23 +21,34 @@
 
 
 .name{
-
-  /* background: url(assets/textures/blue-noise-texture.png) no-repeat center center;
-  background-size: cover;
-
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip:text;
-  background-clip:text;  */
-
   width: auto;
   left: 5%;
   top: 5%;
   position: absolute;
   border-radius: 5px;
-  font-size: 5.4vw;
+  font-size: 4.5vw;
   text-align: center;
   color: #2A56FF;
+  z-index: 5;
+  font-family: Parabole;
+
+
+}
+
+.location-time {
+  display: flex;
+  padding-right: 20px;
+
+}
+
+.location-time p {
+  margin: 10px;
+  font-size: 20px;
+  text-align: right;
+  color: #2A56FF;
+  z-index: 4;
+  font-family: "NM Light";
+  writing-mode:vertical-rl;
 
 }
 

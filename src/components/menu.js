@@ -1,16 +1,17 @@
-import React from 'react';
-import "./menu.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./menu.css";
 
-function Buttons() {
-    return (
-    
+function Navbar() {
+  return (
     <div id="buttons-container">
-        {/* <div className = "button">WORK ↗</div> */}
-        <a href="http://google.com">WORK ↗</a>
-        <a href="http://google.com">ABOUT ↗</a>
-        <a href="mailto:pavan.mannem@gmail.com">CONTACT ↗</a>
+      <Link to="/work">◉ WORK</Link>
+      <Link to="/about">▣ ABOUT</Link>
+      <Link to="/contact">◈ CONTACT</Link>
     </div>
-  
-    );
-  }
-export default Buttons;
+
+    
+  );
+}
+
+export default Navbar;

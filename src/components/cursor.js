@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 import "./cursor.css";
 
 const colors = [
-  "#ffd32a", "#ffd53a", "#ffd747", "#ffd953", "#ffdb5e", "#ffdd68", "#ffdf72", "#ffe17c", "#ffe386", "#ffe58f",
-  "#ffe799", "#ffe9a2", "#ffebab", "#ffeeb5", "#fff0be", "#fff2c7", "#fff4d1", "#fff6da", "#fff8e3", "#fffbec",
-  "#fffdf6", "#ffffff"
+  "#FB9855", "#FB9D5E", "#FBA367", "#FCA870", "#FCAE79", "#FCB382", 
+  "#FCB98B", "#FCBE94", "#FDC39D", "#FDC9A6", "#FDCEAE", "#FDD4B7", 
+  "#FED9C0", "#FEDEC9", "#FEE4D2", "#FEE9DB", "#FEEFE4", "#FFF4ED", 
+  "#FFFAF6", "#FFFFFF"
 ];
 
 const Cursor = () => {
@@ -37,6 +38,7 @@ const Cursor = () => {
       cursor.style.left = y + "px";
 
       circles.forEach(function (circle, index) {
+        if (circle) {
         circle.style.left = x - 12 + "px";
         circle.style.top = y - 12 + "px";
 
@@ -46,8 +48,9 @@ const Cursor = () => {
         circle.y = y;
 
         const nextCircle = circles[index + 1] || circles[0];
-        x += (nextCircle.x - x) * 0.4;
-        y += (nextCircle.y - y) * 0.4;
+        x += (nextCircle.x - x) * 0.5;
+        y += (nextCircle.y - y) * 0.5;
+        }
       });
 
       requestAnimationFrame(animateCircles);

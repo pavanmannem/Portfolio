@@ -4,8 +4,10 @@ body {
   display: flex;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-scrollbar: hidden !important;
   cursor: none !important;
-  font-family: Parabole;
+  /* font-family: Parabole; */
   background-color: #E3E3FD !important;
   overflow: hidden;
 
