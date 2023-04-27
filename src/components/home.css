@@ -1,0 +1,65 @@
+
+  .home {
+    cursor: none !important;
+  }
+  
+  
+  .name{
+    width: auto;
+    left: 5%;
+    top: 5%;
+    position: absolute;
+    border-radius: 5px;
+    font-size: 4.5vw;
+    text-align: center;
+    color: #2A56FF;
+    z-index: 5;
+  
+  }
+
+
+
+
+
+#abstract {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  z-index: 2;
+}
+
+
+
+#rotate {
+  display: absolute;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 5%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  animation: rotation 8s infinite linear;
+  z-index: 2;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "NeueMachina Regular";
+  src: url(../assets/fonts/NueueMachina/PPNeueMachina-Regular.ttf)
+}
+
+@font-face {
+  font-family: "NeueMachina UltraBold";
+  src: url(../assets/fonts/NueueMachina/PPNeueMachina-Ultrabold.ttf)
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 9998;
+    transition: opacity 0.3s ease-in-out;
+    outline: none;
+    font-family: "NeueMachina Regular";
+
+  }
+  
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "NeueMachina Regular";
+
+  }
+
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: 5px black;
+  }
+  
+  .instructions {
+    text-align: center;
+    margin-top: 20px;
+    color: #2A56FF;
+    /* border-style: dashed; */
+    border-radius: 9999px;
+    border-color: #2A56FF;
+    font-size: 35px;
+    font-family: "NeueMachina UltraBold";
+  }
+  
+  .split {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+  }
+  
+  .left{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    border-radius: 15px;
+    border-color: 5px black;
+
+    /* background-color: #eee; */
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+
+
+  }
+  
+  
+  .left .move,
+  .right .orbit {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  
+  .press-enter {
+    text-align: center;
+    margin-top: 75px;
+    font-weight: bold;
+    color: #2A56FF;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 9999px;
+    border-color: #2A56FF;
+    font-size: 30px;
+  }
+
+
+
+  

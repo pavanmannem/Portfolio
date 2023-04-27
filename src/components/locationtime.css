@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "NeueMachina Light";
+    src: url('../assets/fonts/NueueMachina/PPNeueMachina-Light.ttf');
+}
+
+.location-time{
+  color: #FCB98B;
+}
+.location-time > p{
+  font-size: 24px;
+  color: #FCB98B;
+  font-family: "NeueMachina Light";
+  writing-mode: vertical-lr;
+  position: fixed;
+  top: 50%;
+  left: 1%; 
+   transform: translate(0, -50%);
+  }
+  
