@@ -1,63 +1,100 @@
 @font-face {
+  font-family: "Parabole";
+  src: url(../assets/fonts/Parabole/Parabole.ttf);
+}
+
+@font-face {
   font-family: "NeueMachina Regular";
-  src: url(../assets/fonts/NueueMachina/PPNeueMachina-Regular.ttf)
+  src: url(../assets/fonts/NueueMachina/PPNeueMachina-Regular.ttf);
 }
 
 
-  #buttons-container {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
 
-    top: 9%;
-    right: 5%;
-    width: 52vh;
-    text-decoration: none;
+.hoverAnimation {
+  border: 2px solid currentColor;
+  border-radius: 1.5rem;
+  color: #F39D5A;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  overflow: hidden;
+  padding: 0.3rem 0.8rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 3;
+  cursor: none;
+}
 
-    font-family: "NeueMachina Regular";
-  }
-  
-  #buttons-container > a, 
-  #buttons-container > Link {
-    background-color: white;
-    white-space: nowrap;
-    color: #2a56ff;
-    font-size: 25px;
-    text-decoration: none;
-    cursor: none !important;
-    box-shadow: grey;
-  
-    height: 25px;
-    width: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  
-    border-radius: 999px;
-    padding: 20px;
+.hoverAnimation::after {
+  background-color: #2A56FF;
+  border-radius: 1.5rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+  pointer-events: none;
+  cursor: None;
+}
 
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    z-index: 5;
-  
-  } 
-  
-  #buttons-container > a:hover ,
-  #buttons-container > a:focus, 
-  #buttons-container > Link:hover ,
-  #buttons-container > Link:focus{
-    box-shadow: 0 1.0em 1.0em -0.4em var(--hover);
-    transform: translateY(-0.25em);
-    /* font-weight: 1000; */
-    background-color: #FCB382;
-  }
-  
-  #buttons-container > a :hover:after {
-    font-weight: 100;
-  }
-  
+.hoverAnimation:hover::after {
+  transform: translate(0, 0);
+}
+
+.hoverAnimation:hover {
+  border: 2px solid transparent;
+  color: #F39D5A;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  margin-top: 2%;
+  z-index: 2;
+  cursor: none !important;
+}
+
+.name {
+  font-family: "Parabole";
+  font-size: 4vw;
+  text-align: left;
+  color: #2a56ff;
+  margin-right: 5%;
+}
+
+#buttons-container {
+  justify-content: center;
+}
+
+.button-wrapper {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.button-wrapper > *:not(:last-child) {
+  margin-right: 0.6rem;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.resume-button {
+  background-color: transparent; /* Remove the background color fill */
+}

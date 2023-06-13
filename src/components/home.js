@@ -4,6 +4,7 @@ import Cursor from "./cursor";
 import SplineScene from './spline';
 import PopupWindow from './popup';
 import LocTime from './locationtime';
+import StockTicker from './stock_ticker';
 import stars from '../assets/images/SVG/starstarstar.svg'
 import './home.css'
 
@@ -35,19 +36,18 @@ function Home() {
 
   return (
     <div className='home'>
-            <LocTime/>
+      <LocTime/>
       <Navbar />
       <Cursor/>
       <SplineScene/>
       {!isMobile && <PopupWindow/>}
-      <div className="name">pavan mannem</div>
 
       <div className='stickers'>
-        {/* <img id = "smiley" src={smiley}  alt="Smiley" onError={handleImageError} /> */}
         <img id = "rotate" src={stars}  alt="Stars" onError={handleImageError} />
 
 
       </div>
+
 
     </div>
   );

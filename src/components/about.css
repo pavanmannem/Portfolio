@@ -12,6 +12,9 @@
     -moz-transition: all ease 0.6s;
     -o-transition: all ease 0.6s;
     -ms-transition: all ease 0.6s;
+
+
+    cursor: none;
     
 
 
@@ -21,116 +24,70 @@
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-  .back-button {
-    position: absolute;
-    top: 9%;
-    left: 5%;
-    width: 52vh;
-    font-size: 40px;
-    color: #333;
-    text-decoration: none;
-    background-color: white;
-    white-space: nowrap;
-    color: #2a56ff;
-    font-size: 25px;
-    font-family: "Neue Machina-Regular";
-    text-decoration: none;
-    cursor: none !important;
-    height: 25px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    border-radius: 999px;
-    padding: 15px;
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    z-index: 5;
-  }
   
   .about-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin-left: 15vh;
+    height: 100vh; 
+    padding: 0 20px;
+  }
+
+
+  .about-image-container ,  .about-content{
+    width: 35%; /* Adjust the width of the boxes as per your requirement */
+    height: 75%; /* Adjust the height of the boxes as per your requirement */
+    margin: 0 5%; /* Set the desired amount of space between the boxes */
   }
   
   .about-image-container {
-    width: 100%;
-    max-width: 510px;
+    /* flex-basis: 50%; */
+    max-width: 40%;
     overflow: hidden;
     border-radius: 10vh;
   }
   
   .about-image {
-    display: block;
+    /* display: block; */
     width: 100%;
-    height: auto;
     border-radius: 10px;
+    height: 100%;
+
   }
   
   .about-content {
-    padding: 50px;
+    height: 100%;
+    flex-basis: 50%;
+    padding: 4%;
     background-color: #fff;
     border-radius: 80px;
-    max-width: 60vh;
     font-family: "Neue Machina-Regular";
-    font-size: 30px;
-    line-height: 5vh;
-  }
-
-  .about-header{
-    align-items: center;
-    display:inline-block;
-
-  }
-  .about-header > h2{
-    color: #FB9855;
-    padding: 0;
-    display:inline-block;
-
-  }
-
- .colorText{
-    color: #FB9855;
-    font-family: "Neue Machina-Regular";
+    font-size: 4vh;
+    line-height: 6vh;
+    margin-left: 5vh;
   }
   
-  @media (min-width: 768px) {
-    .about-container {
-      padding-top: 20vh;
-      padding-bottom: 20vh;
-    }
-    
-    .about-image-container {
-      flex-basis: 50%;
-      margin-right: 50px;
-      margin-bottom: 0;
-    }
-    
-    .about-content {
-      flex-basis: 50%;
-      margin-left: 50px;
-    }
-  }
+
+
+
+
+
+
+  /* social links */
+
+  
   .social-links {
     position: flex;
-    
+    pointer-events: inherit;
     display: flex;
+
   }
   
   .social-links a {
     display:inline-block;
     margin-left: 10px;
     color: #FB9855;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
   }
   
@@ -158,35 +115,6 @@
     color: #e1306c;
   }
 
-  #smiley {
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  left: 72%;
-  top: 25%;
-  /* transform: translate(-50%, -50%); */
-  z-index: 2;
-}
-
-#hello {
-  height: 150px;
-  width: 300px;
-  position: absolute;
-  left: 30%;
-  top: 50%;
-  transform: rotate(330deg);
-  z-index: 2;
-}
-
-
-/* #cd {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  z-index: 2;
-} */
 
 
 

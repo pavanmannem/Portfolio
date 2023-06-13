@@ -1,15 +1,14 @@
 import React from 'react';
 import Cursor from "./cursor";
+import HomeNavbar from "./menu"
 import LocTime from './locationtime';
+import Home from './home';
 
 
 function Work() {
   return (
     <div>
-      <h1>Work</h1>
-      <p>This is the work page!</p>
-      <LocTime/>
-      <Cursor/>
+
     </div>
     );
 }

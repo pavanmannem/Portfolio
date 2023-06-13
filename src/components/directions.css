@@ -1,44 +1,57 @@
+@font-face {
+  font-family: "NeueMachina Light";
+  src: url('../assets/fonts/NueueMachina/PPNeueMachina-Light.ttf');
+}
+
 .WASDButtons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-  }
-  
-  .WASDRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .WASDButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 20%;
-    background-color: #E3E3FD;
-    color: #2A56FF;
-    text-transform: uppercase;
-    box-shadow: 0 3px 0 #333;
-    transition: background-color 0.2s ease-in-out;
-    margin-right: 1rem;
-  }
-  
-  .WASDButton:focus {
-    outline: none;
-  }
-  
-  .WASDButton.pressed {
-    background-color: red;
-    color: #555;
-    box-shadow: 0 1px 0 #333;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.WASDRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.WASDButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 5rem; /* Adjusted width */
+  height: 5rem; /* Adjusted height */
+  border-radius: 20%;
+  background-color: #e3e3fd;
+  color: #2a56ff;
+  text-transform: uppercase;
+  box-shadow: 0 3px 0 #333;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 1rem;
+}
+
+.WASDButton:focus {
+  outline: none;
+}
+
+.WASDButton.pressed {
+  background-color: red;
+  color: #555;
+  box-shadow: 0 1px 0 #333;
+}
+
+.button-letter {
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.button-arrow {
+  margin-top: 0.3rem; /* Adjust spacing between letter and arrow */
+}

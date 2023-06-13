@@ -53,7 +53,7 @@ const PopupWindow = () => {
       
           <div className='right'>
           <p class="orbit">TO ORBIT LEFT CLICK AND DRAG</p>
-            <img src="https://i.ibb.co/jfBPyL6/output-onlinepngtools-9.png" alt="output-onlinepngtools-9" height = "175" width = "175" border="0"/>
+            <img src="https://i.ibb.co/jfBPyL6/output-onlinepngtools-9.png" alt="output-onlinepngtools-9" height = "200" width = "200" border="0"/>
           </div>
         </div>
         <p className = "press-enter">PRESS ENTER TO EXPLORE</p>

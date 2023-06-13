@@ -3,17 +3,25 @@
     src: url('../assets/fonts/NueueMachina/PPNeueMachina-Light.ttf');
 }
 
-.location-time{
-  color: #FCB98B;
-}
-.location-time > p{
-  font-size: 24px;
-  color: #FCB98B;
-  font-family: "NeueMachina Light";
-  writing-mode: vertical-lr;
-  position: fixed;
-  top: 50%;
-  left: 1%; 
-   transform: translate(0, -50%);
-  }
+
+.location-time {
+  /* display: flex; */
+  /* padding-right: 20px; */
+  margin-top: 20vh;
   
+
+}
+
+.location-time p {
+  position: absolute;
+  margin: 10px;
+  font-size: 20px;
+  text-align: right;
+  color: #2A56FF;
+  z-index: 4;
+  font-family: "NM Light";
+  writing-mode:vertical-rl;
+
+}
+
+

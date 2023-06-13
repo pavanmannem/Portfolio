@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./directions.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp, faArrowLeft, faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const WASDButtons = () => {
   const [isPressed, setIsPressed] = useState({
@@ -29,6 +31,10 @@ const WASDButtons = () => {
           tabIndex="0"
         >
           W
+          <div className="arrow up-arrow">
+            <FontAwesomeIcon icon={faArrowUp} />
+          </div>
+          
         </div>
       </div>
       <div className="WASDRow">
@@ -39,6 +45,10 @@ const WASDButtons = () => {
           tabIndex="0"
         >
           A
+          <div className="arrow left-arrow">
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </div>
+        
         </div>
         <div
           className={`WASDButton ${isPressed.s ? "pressed" : ""}`}
@@ -47,6 +57,9 @@ const WASDButtons = () => {
           tabIndex="0"
         >
           S
+          <div className="arrow down-arrow">
+            <FontAwesomeIcon icon={faArrowDown} />
+          </div>
         </div>
         <div
           className={`WASDButton ${isPressed.d ? "pressed" : ""}`}
@@ -55,6 +68,10 @@ const WASDButtons = () => {
           tabIndex="0"
         >
           D
+          <div className="arrow right-arrow">
+            <FontAwesomeIcon icon={faArrowRight} />
+          </div>
+          
         </div>
       </div>
     </div>
